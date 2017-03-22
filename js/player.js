@@ -19,6 +19,8 @@ function Player() {
 }
 
 Player.prototype.sethandStrength = function(tierList) {
+    this.handText = '';
+    
     // 文字列に変換
     for (var i = 0; i < this.hand.length; i++) {
         this.handText += this.convertNum2Str(this.hand[i].num);
