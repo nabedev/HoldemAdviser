@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hold'em Adviser</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div class="container">
+    <div class="app-container">
+        <!-- TABLE -->
+        <div class="table-container">
+            <div class="pot">Pot:0</div>
+            <div class="board">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="roll-box-container"></div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="btn-container">
+            <div class="btn-wrapper">
+                <div class="btn inactive">
+                    Fold
+                    <div class="btn-side"></div>
+                    <div class="btn-side"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn inactive">
+                    Check
+                    <div class="btn-side"></div>
+                    <div class="btn-side"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn inactive">
+                    Call
+                    <div class="btn-side"></div>
+                    <div class="btn-side"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <div class="btn inactive">
+                    Raise
+                    <div class="btn-side"></div>
+                    <div class="btn-side"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="log-container">
+        <ul>
+        </ul>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./js/html_operator.js"></script>
+<script src="./js/game_engine.js"></script>
+<script src="./js/player.js"></script>
+<script src="./js/card.js"></script>
+<script src="./js/init.js"></script>
+</body>
+</html>

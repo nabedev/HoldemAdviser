@@ -1,0 +1,58 @@
+html,body {
+    height: 100%;
+}
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 12px;
+}
+.container {
+    width: 700px;
+    height: 340px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.log-container {
+    box-sizing: border-box;
+    width: 220px;
+    height: 100%;
+    padding-left: 10px;
+    overflow-y: scroll;
+    float: right;
+}
+.log-container > ul {
+    text-align: left;
+}
+.log-container > ul li {
+    padding: 5px;
+}
+li.announce {
+    background: #dfdfdf;
+    text-align: center;
+}
+li.adviser {
+    background: #4ED99C;
+    text-align: right;
+    position: relative;
+}
+li.adviser::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: solid 6px #4ED99C;
+    border-right: solid 6px transparent;
+    border-left: solid 6px transparent;
+    right: 10px;
+    bottom: -6px;
+    margin: auto;
+    position: absolute;
+}
+li.info {
+    text-align: right;
+}
