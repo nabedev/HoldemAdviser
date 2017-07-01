@@ -281,7 +281,7 @@ GameEngine.prototype.adviserEngine = function(res) {
     var msg = new SpeechSynthesisUtterance();
 
     msg.lang = 'en-US';
-    msg.volume = 0.5;
+    msg.volume = 0.1;
 
     var text = '';
     var p = this.players[this.USER_POSITION];
